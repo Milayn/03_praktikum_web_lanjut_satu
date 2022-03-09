@@ -28,3 +28,31 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('layouts/about');
 });
+
+Route::get('/cart', function () {
+    return view('layouts/cart');
+});
+
+Route::get('/checkout', function () {
+    return view('layouts/checkout');
+});
+
+Route::get('/gallery', function () {
+    return view('layouts/gallery');
+});
+
+Route::get('/my-account', function () {
+    return view('layouts/my-account');
+});
+
+Route::get('/shop-detail', function () {
+    return view('layouts/shop-detail');
+});
+
+Route::get('/shop', function () {
+    return view('layouts/shop');
+});
+
+Route::get('/wishlist', function () {
+    return view('layouts/wishlist');
+});
