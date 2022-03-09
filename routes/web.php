@@ -56,3 +56,7 @@ Route::get('/shop', function () {
 Route::get('/wishlist', function () {
     return view('layouts/wishlist');
 });
+
+Route::get('/contact-us', function () {
+    return view('layouts/contact-us');
+});
