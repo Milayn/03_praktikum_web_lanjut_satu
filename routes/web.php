@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,42 +22,22 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', function () {
-    return view('layouts/index');
-});
+Route::get('/',  [PageController::class, 'index']);
 
-Route::get('/about', function () {
-    return view('layouts/about');
-});
+Route::get('/about', [PageController::class, 'about']);
 
-Route::get('/cart', function () {
-    return view('layouts/cart');
-});
+Route::get('/cart', [PageController::class, 'cart']);
 
-Route::get('/checkout', function () {
-    return view('layouts/checkout');
-});
+Route::get('/checkout', [PageController::class, 'checkout']);
 
-Route::get('/gallery', function () {
-    return view('layouts/gallery');
-});
+Route::get('/gallery', [PageController::class, 'gallery']);
 
-Route::get('/my-account', function () {
-    return view('layouts/my-account');
-});
+Route::get('/my-account', [PageController::class, 'myAccount']);
 
-Route::get('/shop-detail', function () {
-    return view('layouts/shop-detail');
-});
+Route::get('/shop-detail', [PageController::class, 'shopDetail']);
 
-Route::get('/shop', function () {
-    return view('layouts/shop');
-});
+Route::get('/shop', [PageController::class, 'shop']);
 
-Route::get('/wishlist', function () {
-    return view('layouts/wishlist');
-});
+Route::get('/wishlist', [PageController::class, 'wishlist']);
 
-Route::get('/contact-us', function () {
-    return view('layouts/contact-us');
-});
+Route::get('/contact-us', [PageController::class, 'contactUs']);
