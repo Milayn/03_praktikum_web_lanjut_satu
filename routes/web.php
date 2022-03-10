@@ -41,3 +41,6 @@ Route::get('/shop', [PageController::class, 'shop']);
 Route::get('/wishlist', [PageController::class, 'wishlist']);
 
 Route::get('/contact-us', [PageController::class, 'contactUs']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
