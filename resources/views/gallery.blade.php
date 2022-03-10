@@ -1,7 +1,6 @@
 @extends ('layouts.master')
 
 @section('page_title', 'Freshshop | Gallery')
-
 @section('content')
     <!-- Start All Title Box -->
     <div class="all-title-box">
